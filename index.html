@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S. Fernandes | Resume</title>
+    <meta
+      name="description"
+      content="Resume and professional profile for S. Fernandes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f4f6ef;
+        --paper: #fffdf7;
+        --ink: #141414;
+        --muted: #4b5150;
+        --line: #d2d9ce;
+        --accent: #0d6e6e;
+        --accent-2: #f2a541;
+        --shadow: 0 18px 50px rgba(13, 46, 46, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 0%, #e4efe6 0%, transparent 35%),
+          radial-gradient(circle at 90% 20%, #fce6c8 0%, transparent 28%),
+          linear-gradient(160deg, #f3f5ec 0%, #ecf1f7 100%);
+      }
+
+      .wrap {
+        width: min(980px, 92vw);
+        margin: 42px auto;
+      }
+
+      .card {
+        background: var(--paper);
+        border: 1px solid rgba(13, 110, 110, 0.14);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero {
+        position: relative;
+        padding: 44px 38px 30px;
+        background: linear-gradient(135deg, #103d3d 0%, #0b6464 70%, #0f7e7e 100%);
+        color: #f6fffe;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -40px -70px auto;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 65%);
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Newsreader", Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        letter-spacing: 0.2px;
+      }
+
+      .headline {
+        margin-top: 8px;
+        font-size: 1.08rem;
+        max-width: 75ch;
+        color: #daf3f2;
+      }
+
+      .contact {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        font-size: 0.95rem;
+      }
+
+      .contact a {
+        color: #e8fffd;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(232, 255, 253, 0.4);
+      }
+
+      .content {
+        padding: 30px 38px 38px;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 24px;
+      }
+
+      section {
+        border-top: 1px solid var(--line);
+        padding-top: 18px;
+      }
+
+      section:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      h2 {
+        font-family: "Newsreader", Georgia, serif;
+        font-size: 1.35rem;
+        margin-bottom: 10px;
+      }
+
+      .item {
+        margin-bottom: 16px;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-bottom: 6px;
+      }
+
+      ul {
+        padding-left: 18px;
+        line-height: 1.45;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        font-size: 0.87rem;
+        border: 1px solid #bdd4cb;
+        background: #f6faf7;
+        border-radius: 999px;
+        padding: 4px 10px;
+      }
+
+      .sidebar section {
+        background: #f9fcfa;
+        border: 1px solid #e3ece8;
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      .cta {
+        margin-top: 22px;
+        display: inline-block;
+        text-decoration: none;
+        color: #0f3f3f;
+        background: linear-gradient(95deg, #f7d6a5 0%, #f2a541 100%);
+        border: 1px solid #e59a3a;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-weight: 600;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeUp 560ms ease forwards;
+      }
+
+      .delay-1 { animation-delay: 120ms; }
+      .delay-2 { animation-delay: 210ms; }
+      .delay-3 { animation-delay: 300ms; }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .content {
+          grid-template-columns: 1fr;
+          padding: 24px 20px 28px;
+        }
+
+        .hero {
+          padding: 30px 20px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <article class="card">
+        <header class="hero fade-up">
+          <h1>S. Fernandes</h1>
+          <p class="headline">
+            Industrial energy and flexibility professional focused on demand response,
+            operational optimization, and energy cost strategy.
+          </p>
+          <div class="contact">
+            <span>City, Country</span>
+            <a href="mailto:you@example.com">you@example.com</a>
+            <a href="https://github.com/sgfernandes" target="_blank" rel="noreferrer">github.com/sgfernandes</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="main">
+            <section class="fade-up delay-1">
+              <h2>Experience</h2>
+              <div class="item">
+                <h3>Senior Energy Analyst - Company Name</h3>
+                <p class="meta">2022 - Present</p>
+                <ul>
+                  <li>Led demand flexibility assessments across industrial sites and quantified annual savings opportunities.</li>
+                  <li>Built operating playbooks for peak reduction events while protecting production and quality targets.</li>
+                  <li>Partnered with operations, finance, and engineering teams to align investment and dispatch decisions.</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Energy Engineer - Company Name</h3>
+                <p class="meta">2019 - 2022</p>
+                <ul>
+                  <li>Implemented interval-data analytics to identify demand-charge drivers and controllable loads.</li>
+                  <li>Supported automation projects integrating metering, controls, and reporting workflows.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="fade-up delay-2">
+              <h2>Education</h2>
+              <div class="item">
+                <h3>Degree Name, University Name</h3>
+                <p class="meta">Year</p>
+              </div>
+            </section>
+          </div>
+
+          <aside class="sidebar">
+            <section class="fade-up delay-1">
+              <h2>Summary</h2>
+              <p>
+                Add a concise 3-4 sentence summary here highlighting your domain,
+                measurable outcomes, and strengths.
+              </p>
+            </section>
+
+            <section class="fade-up delay-2">
+              <h2>Skills</h2>
+              <div class="tag-list">
+                <span class="tag">Demand Response</span>
+                <span class="tag">Load Flexibility</span>
+                <span class="tag">Tariff Analysis</span>
+                <span class="tag">Data Analytics</span>
+                <span class="tag">Stakeholder Engagement</span>
+                <span class="tag">Controls Integration</span>
+              </div>
+            </section>
+
+            <section class="fade-up delay-3">
+              <h2>Certifications</h2>
+              <ul>
+                <li>Certification Name</li>
+                <li>Certification Name</li>
+              </ul>
+              <a class="cta" href="#" onclick="return false;">Attach PDF Resume (optional)</a>
+            </section>
+          </aside>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
