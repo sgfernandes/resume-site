@@ -160,6 +160,69 @@
         padding: 4px 10px;
       }
 
+      .phd-shell {
+        border: 1px solid rgba(13, 110, 110, 0.24);
+        border-radius: 16px;
+        background: linear-gradient(180deg, #f6fbf9 0%, #eef6f3 100%);
+        padding: 14px;
+      }
+
+      .phd-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .phd-card {
+        border: 1px solid #d3e4dd;
+        border-radius: 12px;
+        padding: 12px;
+        background: #ffffff;
+      }
+
+      .phd-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .icon-badge {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #0f3f3f;
+        background: linear-gradient(135deg, #d8efe9 0%, #f6d7a8 100%);
+        border: 1px solid #c6ddd5;
+      }
+
+      .phd-card h3 {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+
+      .phd-card ul {
+        margin-top: 6px;
+      }
+
+      .edu-item {
+        margin-bottom: 12px;
+      }
+
+      .edu-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .edu-item h3 {
+        font-size: 1.02rem;
+      }
+
       .sidebar section {
         background: #f9fcfa;
         border: 1px solid #e3ece8;
@@ -204,6 +267,10 @@
 
         .hero {
           padding: 30px 20px 24px;
+        }
+
+        .phd-grid {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -278,21 +345,31 @@
 
             <section class="fade-up delay-3">
               <h2>PhD Research Work</h2>
-              <div class="item">
-                <h3>Indoor Pathogen Control System</h3>
-                <ul>
-                  <li>Designed and evaluated an integrated indoor pathogen control framework that combined ventilation strategy, airflow engineering, and sensing for risk-informed operation.</li>
-                  <li>Built experimental protocols to quantify aerosol transport and identify high-risk zones, then translated findings into actionable control recommendations for safer indoor environments.</li>
-                  <li>Demonstrated practical pathways for deployment in occupied buildings by balancing infection-risk reduction, comfort, and energy constraints.</li>
-                </ul>
-              </div>
-              <div class="item">
-                <h3>Short-Range Backscatter Lidar for Indoor Air Velocity</h3>
-                <ul>
-                  <li>Developed a non-intrusive velocimetry method using picosecond short-range backscatter lidar and a cross-correlation Particle Non-Image Velocity (PNIV) algorithm.</li>
-                  <li>Validated performance across synthetic and chamber datasets, showing strong agreement between estimated and known velocities and robust behavior in low-flow indoor conditions.</li>
-                  <li>Advanced indoor flow diagnostics with high temporal and spatial resolution, enabling better characterization of ventilation behavior and contaminant transport dynamics.</li>
-                </ul>
+              <div class="phd-shell">
+                <div class="phd-grid">
+                  <article class="phd-card">
+                    <div class="phd-head">
+                      <span class="icon-badge">PCS</span>
+                      <h3>Indoor Pathogen Control System</h3>
+                    </div>
+                    <ul>
+                      <li>Designed and evaluated an integrated indoor pathogen control framework combining ventilation strategy, airflow engineering, and sensing for risk-informed operation.</li>
+                      <li>Built experimental protocols to quantify aerosol transport and identify high-risk zones, then translated findings into actionable control recommendations.</li>
+                      <li>Demonstrated deployment-ready pathways that balance infection-risk reduction, comfort, and energy constraints in occupied buildings.</li>
+                    </ul>
+                  </article>
+                  <article class="phd-card">
+                    <div class="phd-head">
+                      <span class="icon-badge">LDR</span>
+                      <h3>Short-Range Lidar Airflow Velocimetry</h3>
+                    </div>
+                    <ul>
+                      <li>Developed a non-intrusive velocimetry approach using picosecond short-range backscatter lidar and a correlation-based PNIV algorithm.</li>
+                      <li>Validated performance across synthetic and chamber datasets with strong agreement between estimated and known velocities.</li>
+                      <li>Improved indoor flow diagnostics with high temporal and spatial resolution for ventilation characterization and contaminant transport analysis.</li>
+                    </ul>
+                  </article>
+                </div>
               </div>
             </section>
           </div>
@@ -324,6 +401,26 @@
                 <li><strong>Production Engineering:</strong> Python, SQL, FastAPI microservices, data validation, and reproducible evaluation pipelines.</li>
                 <li><strong>Cross-functional Delivery:</strong> convert ambiguous goals into shipped systems and communicate tradeoffs clearly to diverse stakeholders.</li>
               </ul>
+            </section>
+
+            <section class="fade-up delay-3">
+              <h2>Education</h2>
+              <div class="edu-item">
+                <h3>University of California, Berkeley</h3>
+                <p class="meta">PhD, Civil and Environmental Engineering | 2019 - Aug 2025</p>
+                <p class="meta">Dissertation: Synergistic Pathogen Control and Indoor Airflow Characterization Using Backscatter Lidar and Graph-Theoretic Optimization</p>
+                <p class="meta">Major: Energy, Civil Infrastructure and Climate Science | Minor: Computer Science and Machine Learning</p>
+              </div>
+              <div class="edu-item">
+                <h3>The Australian National University</h3>
+                <p class="meta">Master, Systems Engineering</p>
+                <p class="meta">Thesis: Powered servers using wind energy by modeling server-farm demand from meter data and estimating wind energy siting requirements.</p>
+              </div>
+              <div class="edu-item">
+                <h3>University of Mumbai</h3>
+                <p class="meta">Bachelor, Engineering</p>
+                <p class="meta">Electronics and Telecommunications Engineering</p>
+              </div>
             </section>
 
             <section class="fade-up delay-3">
